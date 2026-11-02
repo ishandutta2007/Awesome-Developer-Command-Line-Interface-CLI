@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI?color=blue" alt="GitHub issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Developer-Command-Line-Interface-CLI?color=emerald" alt="License" /></a>
@@ -67,76 +67,76 @@ The sector is **highly fragmented**—characterized by vibrant open-source botto
 
 ## 💻 Open-Source GitHub Projects
 
-Open-source terminal tooling forms the backbone of developer productivity. Below are top-tier open-source command line tools, terminal enhancers, and developer CLIs, complete with live star badges and sorted by GitHub stargazers.
+Open-source terminal tooling forms the backbone of developer productivity. Below are top-tier open-source command line tools, terminal enhancers, and developer CLIs, complete with live Stars_Badges and sorted by GitHub stargazers.
 
 ### 🔥 Top Open-Source CLI & Terminal Tools (Ranked by Stars)
 
-- **[fzf](https://github.com/junegunn/fzf)** [![GitHub stars](https://img.shields.io/github/stars/junegunn/fzf?style=social&color=white)](https://github.com/junegunn/fzf/stargazers) 🔍
+- **[fzf](https://github.com/junegunn/fzf)** [![GitHub_Stars](https://img.shields.io/github/stars/junegunn/fzf?style=social&color=white)](https://github.com/junegunn/fzf/stargazers) 🔍
   - **Description**: An interactive, blazingly fast general-purpose command-line fuzzy finder with zero dependencies and comprehensive shell integration (Bash, Zsh, Fish).
   - **Tech Stack**: Go
   - **Best For**: Real-time interactive file searching, history navigation, and piping into any CLI pipeline.
 
-- **[lazygit](https://github.com/jesseduffield/lazygit)** [![GitHub stars](https://img.shields.io/github/stars/jesseduffield/lazygit?style=social&color=white)](https://github.com/jesseduffield/lazygit/stargazers) 🐙
+- **[lazygit](https://github.com/jesseduffield/lazygit)** [![GitHub_Stars](https://img.shields.io/github/stars/jesseduffield/lazygit?style=social&color=white)](https://github.com/jesseduffield/lazygit/stargazers) 🐙
   - **Description**: Simple, intuitive terminal UI for git commands that makes staging lines, resolving merge conflicts, and interactive rebasing effortless.
   - **Tech Stack**: Go
   - **Best For**: Developers seeking a visual, keyboard-driven terminal dashboard for complete Git workflows.
 
-- **[ripgrep](https://github.com/BurntSushi/ripgrep)** [![GitHub stars](https://img.shields.io/github/stars/BurntSushi/ripgrep?style=social&color=white)](https://github.com/BurntSushi/ripgrep/stargazers) ⚡
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** [![GitHub_Stars](https://img.shields.io/github/stars/BurntSushi/ripgrep?style=social&color=white)](https://github.com/BurntSushi/ripgrep/stargazers) ⚡
   - **Description**: Extremely fast line-oriented search tool that recursively searches directories for regex patterns while automatically respecting `.gitignore` rules.
   - **Tech Stack**: Rust
   - **Best For**: Instant code search across massive mono-repos and codebases without overhead.
 
-- **[bat](https://github.com/sharkdp/bat)** [![GitHub stars](https://img.shields.io/github/stars/sharkdp/bat?style=social&color=white)](https://github.com/sharkdp/bat/stargazers) 🦇
+- **[bat](https://github.com/sharkdp/bat)** [![GitHub_Stars](https://img.shields.io/github/stars/sharkdp/bat?style=social&color=white)](https://github.com/sharkdp/bat/stargazers) 🦇
   - **Description**: A modern `cat` clone with syntax highlighting for dozens of file formats, Git modifications integration, automatic paging, and line numbering.
   - **Tech Stack**: Rust
   - **Best For**: File viewing and code inspection directly in the shell.
 
-- **[starship](https://github.com/starship/starship)** [![GitHub stars](https://img.shields.io/github/stars/starship/starship?style=social&color=white)](https://github.com/starship/starship/stargazers) 🚀
+- **[starship](https://github.com/starship/starship)** [![GitHub_Stars](https://img.shields.io/github/stars/starship/starship?style=social&color=white)](https://github.com/starship/starship/stargazers) 🚀
   - **Description**: The minimal, blazing-fast, and infinitely customizable cross-shell prompt (Zsh, Bash, Fish, PowerShell, Nushell).
   - **Tech Stack**: Rust
   - **Best For**: Rich, contextual, language-aware terminal prompts that render in milliseconds.
 
-- **[GitHub CLI (`gh`)](https://github.com/cli/cli)** [![GitHub stars](https://img.shields.io/github/stars/cli/cli?style=social&color=white)](https://github.com/cli/cli/stargazers) 💼
+- **[GitHub CLI (`gh`)](https://github.com/cli/cli)** [![GitHub_Stars](https://img.shields.io/github/stars/cli/cli?style=social&color=white)](https://github.com/cli/cli/stargazers) 💼
   - **Description**: GitHub’s official command-line tool bringing pull requests, issues, actions, releases, and repository configuration straight into your shell.
   - **Tech Stack**: Go
   - **Best For**: Managing GitHub collaboration without context switching to the browser.
 
-- **[zoxide](https://github.com/ajeetdsouza/zoxide)** [![GitHub stars](https://img.shields.io/github/stars/ajeetdsouza/zoxide?style=social&color=white)](https://github.com/ajeetdsouza/zoxide/stargazers) 📂
+- **[zoxide](https://github.com/ajeetdsouza/zoxide)** [![GitHub_Stars](https://img.shields.io/github/stars/ajeetdsouza/zoxide?style=social&color=white)](https://github.com/ajeetdsouza/zoxide/stargazers) 📂
   - **Description**: A smarter `cd` command inspired by `z` and `autojump`. It tracks your most frequently used directories to navigate anywhere in just a few keystrokes.
   - **Tech Stack**: Rust
   - **Best For**: Instant terminal navigation across complex directory hierarchies.
 
-- **[atuin](https://github.com/atuinsh/atuin)** [![GitHub stars](https://img.shields.io/github/stars/atuinsh/atuin?style=social&color=white)](https://github.com/atuinsh/atuin/stargazers) 📜
+- **[atuin](https://github.com/atuinsh/atuin)** [![GitHub_Stars](https://img.shields.io/github/stars/atuinsh/atuin?style=social&color=white)](https://github.com/atuinsh/atuin/stargazers) 📜
   - **Description**: Magical shell history stored in an SQLite database with end-to-end encrypted sync, search filters, exit codes, and execution duration tracking.
   - **Tech Stack**: Rust, SQLite
   - **Best For**: Upgrading `Ctrl+R` shell history across all your machines securely.
 
-- **[hyperfine](https://github.com/sharkdp/hyperfine)** [![GitHub stars](https://img.shields.io/github/stars/sharkdp/hyperfine?style=social&color=white)](https://github.com/sharkdp/hyperfine/stargazers) ⏱️
+- **[hyperfine](https://github.com/sharkdp/hyperfine)** [![GitHub_Stars](https://img.shields.io/github/stars/sharkdp/hyperfine?style=social&color=white)](https://github.com/sharkdp/hyperfine/stargazers) ⏱️
   - **Description**: A command-line benchmarking tool featuring statistical analysis, warm-up runs, parameterized benchmarks, and export to Markdown/CSV/JSON.
   - **Tech Stack**: Rust
   - **Best For**: Performance profiling CLI binaries, shell scripts, and build tasks.
 
-- **[gum](https://github.com/charmbracelet/gum)** [![GitHub stars](https://img.shields.io/github/stars/charmbracelet/gum?style=social&color=white)](https://github.com/charmbracelet/gum/stargazers) 🍬
+- **[gum](https://github.com/charmbracelet/gum)** [![GitHub_Stars](https://img.shields.io/github/stars/charmbracelet/gum?style=social&color=white)](https://github.com/charmbracelet/gum/stargazers) 🍬
   - **Description**: A tool for glamorous shell scripts and CLI prompts. Write interactive terminal inputs, spinners, multi-select menus, and styled text with zero boilerplate.
   - **Tech Stack**: Go
   - **Best For**: Creating polished interactive shell scripts and onboarding wizards.
 
-- **[eza](https://github.com/eza-community/eza)** [![GitHub stars](https://img.shields.io/github/stars/eza-community/eza?style=social&color=white)](https://github.com/eza-community/eza/stargazers) 📁
+- **[eza](https://github.com/eza-community/eza)** [![GitHub_Stars](https://img.shields.io/github/stars/eza-community/eza?style=social&color=white)](https://github.com/eza-community/eza/stargazers) 📁
   - **Description**: A modern, actively maintained replacement for `ls` featuring file type icons, colors, Git status indicators, symlink targets, and tree views.
   - **Tech Stack**: Rust
   - **Best For**: Everyday directory listing and visual file tree inspection.
 
-- **[fq](https://github.com/wader/fq)** [![GitHub stars](https://img.shields.io/github/stars/wader/fq?style=social&color=white)](https://github.com/wader/fq/stargazers) 🔬
+- **[fq](https://github.com/wader/fq)** [![GitHub_Stars](https://img.shields.io/github/stars/wader/fq?style=social&color=white)](https://github.com/wader/fq/stargazers) 🔬
   - **Description**: JQ-style query and binary data inspection tool for decoding and manipulating binary streams (MP4, PCAP, ELF, PNG, JSON, etc.).
   - **Tech Stack**: Go
   - **Best For**: Reverse engineering, packet analysis, and media container debugging.
 
-- **[himalaya](https://github.com/pimalaya/himalaya)** [![GitHub stars](https://img.shields.io/github/stars/pimalaya/himalaya?style=social&color=white)](https://github.com/pimalaya/himalaya/stargazers) 📬
+- **[himalaya](https://github.com/pimalaya/himalaya)** [![GitHub_Stars](https://img.shields.io/github/stars/pimalaya/himalaya?style=social&color=white)](https://github.com/pimalaya/himalaya/stargazers) 📬
   - **Description**: CLI email client and TUI supporting IMAP, JMAP, Maildir, Gmail, and Microsoft 365 with modern scripting capabilities.
   - **Tech Stack**: Rust
   - **Best For**: Terminal-centric email management and scriptable mail automation.
 
-- **[ohmygosh](https://github.com/tsukinoko-kun/ohmygosh)** [![GitHub stars](https://img.shields.io/github/stars/tsukinoko-kun/ohmygosh?style=social&color=white)](https://github.com/tsukinoko-kun/ohmygosh/stargazers) 🧪
+- **[ohmygosh](https://github.com/tsukinoko-kun/ohmygosh)** [![GitHub_Stars](https://img.shields.io/github/stars/tsukinoko-kun/ohmygosh?style=social&color=white)](https://github.com/tsukinoko-kun/ohmygosh/stargazers) 🧪
   - **Description**: Experimental interactive shell in Go with Warp-inspired UI, multi-command concurrent execution, click-to-cancel, and Vim motions.
   - **Tech Stack**: Go
   - **Best For**: Exploring modern graphical paradigms integrated directly into shell processes.
