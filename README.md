@@ -32,79 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The Developer Command Line Interface (CLI) and developer tooling market is valued at approximately $1.42B to $5.6B (as part of the broader $30B+ software developer tooling ecosystem) and is projected to expand at a 9.8% to 15% CAGR through 2033. The sector is highly fragmented—characterized by vibrant open-source bottom-up adoption across diverse programming language ecosystems, while major cloud hyperscalers maintain high switching costs and platform-specific lock-in without a single winner-take-all monopoly across the terminal layer.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Snowflake CLI (`snow`)**
-
-  **Official CLI for Snowflake** with commands for Cortex AI, dbt projects, Git, notebooks, Native Apps, Snowpark, SQL, and Streamlit . **Pricing**: Free; Snowflake compute costs apply. **Free tier**: Trial credits. **Best for**: Snowflake developers wanting scriptable access to warehouse features—**trade-off**: requires Snowflake account.
-
-
-
-- **AWS CLI**
-
-  **Official CLI for AWS** with commands for every AWS service. **Pricing**: Free; AWS usage costs apply. **Free tier**: AWS Free Tier applies. **Best for**: AWS-centric teams wanting infrastructure automation—**trade-off**: massive command surface requires learning curve.
-
-
-
-- **Google Cloud SDK (`gcloud`)**
-
-  **Official CLI for Google Cloud** with compute, storage, and AI commands. **Pricing**: Free; GCP usage costs apply. **Free tier**: Google Cloud Free Tier. **Best for**: GCP teams wanting scriptable resource management.
-
-
-
-- **Azure CLI (`az`)**
-
-  **Official CLI for Azure** with cross-platform support. **Pricing**: Free; Azure usage costs apply. **Free tier**: Azure Free Account. **Best for**: Azure teams wanting infrastructure-as-code workflows.
-
-
-
-- **GitHub CLI (`gh`)**
-
-  **Official CLI for GitHub** with PR, issue, and repository management. **Pricing**: Free. **Free tier**: Yes. **Best for**: GitHub users wanting to manage repos without leaving the terminal .
-
-
-
-- **Databricks CLI**
-
-  **Official CLI for Databricks** with clusters, jobs, Unity Catalog, AI Search, and Genie commands . **Pricing**: Free; Databricks usage costs apply. **Free tier**: Community Edition limited. **Best for**: Databricks developers wanting scriptable workspace management—**trade-off**: Public Preview status; command surface evolving .
-
-
-
-- **Stripe CLI**
-
-  **Official CLI for Stripe** with webhook testing, API requests, and fixtures . **Pricing**: Free. **Free tier**: Yes. **Best for**: developers testing Stripe integrations locally—**trade-off**: live mode requires password store setup .
-
-
-
-- **Vercel CLI**
-
-  **Official CLI for Vercel** with deploy, env, and domain commands . **Pricing**: Free; Vercel usage costs apply. **Free tier**: Hobby plan. **Best for**: frontend developers wanting preview and production deploys from terminal.
-
-
-
-- **Supabase CLI**
-
-  **Official CLI for Supabase** with local dev, migrations, and type generation . **Pricing**: Free; Supabase usage costs apply. **Free tier**: Yes. **Best for**: Supabase developers wanting local-first workflows—**trade-off**: requires Docker for local stack.
-
-
-
-- **Cloudflare Wrangler**
-
-  **Official CLI for Cloudflare Workers** with dev, deploy, secrets, and D1/R2 management . **Pricing**: Free; Cloudflare usage costs apply. **Free tier**: Yes. **Best for**: Workers developers wanting edge deployment automation—**trade-off**: v4 mutates flags per minor release .
-
-
+| Platform / CLI | Company Size (Valuation / Revenue) | Pricing (Starting Paid Tier) | Free Tier Limits | Best For / Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **Azure CLI (`az`)** | Microsoft: ~$3.8T Market Cap / $100B+ Cloud Rev | Free CLI; Pay-as-you-go / Pay-per-resource (e.g., B1s VM from ~$0.0104/hr) | **Azure Free Account**: $200 trial credit (30 days) + 12 months free services (e.g., 750 hrs B1s VM, 5 GB Blob storage) + 55+ always-free services | Azure-centric infrastructure automation and ARM/Bicep template deployments |
+| **AWS CLI** | Amazon: ~$2.1T Market Cap / $100B+ AWS Rev | Free CLI; Pay-as-you-go / Pay-per-resource (e.g., t4g.nano from ~$0.0042/hr) | **AWS Free Tier**: 12-month free trial (750 hrs/mo t2.micro/t3.micro, 5 GB S3 storage) + Always-free tier (1M Lambda requests/mo, 25 GB DynamoDB) | Enterprise cloud operations, scripting, and full-spectrum AWS services |
+| **Google Cloud SDK (`gcloud`)** | Alphabet: ~$2.0T Market Cap / $40B+ GCP Rev | Free CLI; Pay-as-you-go / Pay-per-resource (e.g., e2-micro from ~$0.0084/hr) | **Google Cloud Free Tier**: $300 trial credit (90 days) + Always-free tier (1 non-preemptible e2-micro VM/mo in US regions, 5 GB Cloud Storage, 2M Cloud Function calls/mo) | GCP resource provisioning, BigQuery management, and Kubernetes engine orchestration |
+| **Databricks CLI** | Databricks: $190B Valuation / $7B+ ARR | Free CLI; Serverless / Jobs compute starts at ~$0.10 to $0.15 per DBU (+ underlying cloud VM cost) | **Databricks Free Trial**: 14-day free trial with up to $400 in usage credits; or Community Edition (micro-cluster, personal non-commercial learning only) | Databricks Lakehouse, jobs scheduling, and Unity Catalog automation |
+| **Stripe CLI** | Stripe: $159B Valuation / $6.8B+ Rev | Free CLI; Live processing starts at 2.9% + 30¢ per domestic transaction | **Stripe Test Mode**: 100% free indefinitely for simulation, local webhook listener forwarding, fixture generation, and API sandboxing (no monthly subscription or setup fees) | Local webhook testing and payments API development |
+| **Cloudflare Wrangler** | Cloudflare: ~$110B Market Cap / $2.17B+ Rev | Free CLI; Workers Paid plan starts at $5.00/month (includes 10M requests + 30M CPU ms; $0.30/million extra requests) | **Workers Free Tier**: 100,000 requests per day (resets daily at UTC midnight), 10ms CPU time per invocation, up to 100 worker scripts | Edge compute deployment, serverless Workers, and KV/D1/R2 management |
+| **Snowflake CLI (`snow`)** | Snowflake: ~$108B Market Cap / $4.68B+ Rev | Free CLI; Standard tier starts at $2.00 per capacity credit (AWS US East) + $23/TB/mo storage | **Snowflake Free Trial**: $400 in free usage credits valid for 30 days (whichever expires first; no upfront billing required) | Data warehouse management, Streamlit apps, Snowpark, and SQL automation |
+| **GitHub CLI (`gh`)** | Microsoft / GitHub: $7.5B Acq. / Part of $3.8T MSFT | Free CLI; Team plan starts at $4.00/user/month | **GitHub Free Tier**: Unlimited public/private repositories, 2,000 GitHub Actions CI/CD minutes/mo (for private repos), 500 MB GitHub Packages storage | Terminal-native pull requests, issue tracking, and repository workflows |
+| **Supabase CLI** | Supabase: $10.5B Valuation / ~$170M ARR | Free CLI; Pro plan starts at $25.00/month (includes 8 GB disk, 100 GB storage, 250 GB egress, $10 compute credits) | **Supabase Free Tier**: Up to 2 active projects (pauses after 1 week inactivity), 500 MB database, 1 GB storage, 50,000 MAUs, 500k edge functions/mo | Local-first Postgres development, migrations, schema typing, and emulated backend |
+| **Vercel CLI** | Vercel: $9.3B Valuation / ~$200M+ ARR | Free CLI; Pro plan starts at $20.00/seat/month (includes $20 monthly usage credit, priority build queues) | **Vercel Hobby Tier**: Free for non-commercial use; 100 GB fast data transfer/mo, 1M edge requests/mo, 1M serverless function invocations/mo, 4 CPU-hours | Frontend deployment, preview URLs, domain configuration, and Next.js optimization |
 
 ## Open-Source GitHub Projects
 
