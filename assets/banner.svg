@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', 'Fira Code', monospace;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
+
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accent-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Animated Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(25px, -15px); opacity: 0.65; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
+      50% { transform: scale(1.2) translate(-20px, 20px); opacity: 0.6; }
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes floatPillDelayed {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(6px); }
+    }
+
+    .orb-1 { animation: pulseOrb 7s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb2 9s ease-in-out infinite; transform-origin: 1000px 250px; }
+    .cursor { animation: blink 1s step-end infinite; }
+    .flowing-stream { stroke-dasharray: 20, 15; animation: flowLine 6s linear infinite; }
+    .pill-float-1 { animation: floatPill 4s ease-in-out infinite; }
+    .pill-float-2 { animation: floatPillDelayed 5s ease-in-out infinite; }
+    .pill-float-3 { animation: floatPill 4.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#grid)" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <g>
+    <circle class="orb-1" cx="180" cy="90" r="140" fill="#38bdf8" filter="url(#glow)" />
+    <circle class="orb-2" cx="1020" cy="270" r="160" fill="#a855f7" filter="url(#glow)" />
+    <circle cx="600" cy="180" r="180" fill="#6366f1" opacity="0.12" filter="url(#glow)" />
+  </g>
+
+  <!-- Animated Tech Connection Lines (Subtle Background) -->
+  <path class="flowing-stream" d="M 50 180 Q 300 80, 600 180 T 1150 180" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.2" />
+  <path class="flowing-stream" d="M 50 220 Q 350 320, 650 200 T 1150 140" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.2" />
+
+  <!-- Terminal Window Mockup Frame -->
+  <g transform="translate(100, 30)">
+    <!-- Window Border & Body -->
+    <rect width="1000" height="300" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="1000" height="42" rx="12" fill="#0f172a" />
+    <!-- Fix bottom rounded corners of header -->
+    <rect y="30" width="1000" height="12" fill="#0f172a" />
+    <line x1="0" y1="42" x2="1000" y2="42" stroke="#1e293b" stroke-width="1.5" />
+
+    <!-- Terminal Window Buttons -->
+    <circle cx="25" cy="21" r="6" fill="#ef4444" />
+    <circle cx="45" cy="21" r="6" fill="#f59e0b" />
+    <circle cx="65" cy="21" r="6" fill="#10b981" />
+
+    <!-- Terminal Title Tab -->
+    <rect x="380" y="8" width="240" height="26" rx="6" fill="#1e293b" />
+    <text x="500" y="25" fill="#94a3b8" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="0.5">developer@terminal: ~</text>
+
+    <!-- Foreground Content -->
+    <!-- Prompt Command Line -->
+    <g transform="translate(50, 85)">
+      <text x="0" y="0" fill="#34d399" font-size="18" font-weight="700">➜</text>
+      <text x="22" y="0" fill="#38bdf8" font-size="18" font-weight="700">~</text>
+      <text x="42" y="0" fill="#f8fafc" font-size="18" font-weight="500">awesome-cli --explore --all-stars</text>
+      <rect class="cursor" x="355" y="-15" width="9" height="18" fill="#38bdf8" rx="2" />
+    </g>
+
+    <!-- Main Title in Foreground -->
+    <g transform="translate(50, 150)">
+      <text x="0" y="0" fill="url(#primary-grad)" font-size="34" font-weight="900" letter-spacing="-0.5">
+        Awesome Developer CLI
+      </text>
+      <text x="500" y="-3" fill="#64748b" font-size="20" font-weight="400">|</text>
+      <text x="520" y="-2" fill="#f1f5f9" font-size="22" font-weight="700">Command Line Interface</text>
+    </g>
+
+    <!-- Subtitle in Foreground -->
+    <g transform="translate(50, 185)">
+      <text x="0" y="0" fill="#cbd5e1" font-size="16" font-weight="400">
+        Curated SaaS Platforms, Cloud Tooling &amp; High-Performance Open-Source Terminal Utilities
+      </text>
+    </g>
+
+    <!-- Dynamic Interactive Feature Pills (Floating Safely at Bottom) -->
+    <g transform="translate(50, 240)">
+      <!-- Pill 1: Cloud Hyperscalers -->
+      <g class="pill-float-1" transform="translate(0, 0)">
+        <rect width="180" height="34" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8" />
+        <circle cx="18" cy="17" r="4" fill="#38bdf8" />
+        <text x="32" y="22" fill="#f8fafc" font-size="12" font-weight="600">AWS • Azure • GCP</text>
+      </g>
+
+      <!-- Pill 2: DevOps & Local APIs -->
+      <g class="pill-float-2" transform="translate(200, 0)">
+        <rect width="210" height="34" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.8" />
+        <circle cx="18" cy="17" r="4" fill="#818cf8" />
+        <text x="32" y="22" fill="#f8fafc" font-size="12" font-weight="600">Stripe • Supabase • Vercel</text>
+      </g>
+
+      <!-- Pill 3: Terminal Power Tools -->
+      <g class="pill-float-3" transform="translate(430, 0)">
+        <rect width="240" height="34" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.8" />
+        <circle cx="18" cy="17" r="4" fill="#34d399" />
+        <text x="32" y="22" fill="#f8fafc" font-size="12" font-weight="600">fzf • ripgrep • bat • lazygit</text>
+      </g>
+
+      <!-- Pill 4: Rust & Shell Productivity -->
+      <g class="pill-float-1" transform="translate(690, 0)">
+        <rect width="205" height="34" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.8" />
+        <circle cx="18" cy="17" r="4" fill="#c084fc" />
+        <text x="32" y="22" fill="#f8fafc" font-size="12" font-weight="600">starship • atuin • eza</text>
+      </g>
+    </g>
+  </g>
+</svg>
